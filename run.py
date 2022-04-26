@@ -58,7 +58,6 @@ def run(name, load=0, gif=False, reset=False):
     step_reset = environment_config.getboolean('step_reset')
     observation = environment_config.get('observation', 'ram')
     extend_dims = environment_config.getboolean('extend_dims')
-    render = environment_config.getboolean('render')
 
     # agent
     agent = agent_config.get('agent')
