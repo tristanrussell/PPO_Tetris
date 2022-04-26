@@ -38,10 +38,11 @@ pip install -r requirements.txt
 
 ## Usage
 
-The project is built following a specific folder structure. The training folder
-is used as the entry point for storing for each run. To create a new test,
-first start by creating a new folder in the training folder with the test name
-and adding a config.ini file, weights folder and gifs folder to this.
+The project is built following a specific directory structure. The training
+directory is used as the entry point for storing for each run. To create a new
+test, first start by creating a new directory in the training directory with
+the test name and adding a config.ini file, weights directory and gifs
+directory to this.
 
 ### Running the agent
 You can run the test using:
@@ -68,7 +69,7 @@ For a list of all the command line arguments supported by these files, use the
 ### Generating the logs
 You can generate logs from a previous run using:
 ```shell
-python run_data.py --names <path_to_test_folder>
+python run_data.py --names <path_to_test_directory>
 ```
 
 For example, to generate logs for the agent included with this project:
