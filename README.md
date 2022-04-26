@@ -35,9 +35,3 @@ You can generate logs from a previous run using:
 
 ```
 
-### Analysing the data
-You can analyse the data using the Jupyter notebook file:
-```shell
-
-```
-
