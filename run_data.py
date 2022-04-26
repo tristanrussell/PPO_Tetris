@@ -20,11 +20,20 @@ eps = np.finfo(np.float32).eps.item()
 
 parser = argparse.ArgumentParser()
 
-parser.add_argument('--names', nargs='*', required=True)
-parser.add_argument('-s', '--start', type=int, default=0)
-parser.add_argument('-e', '--end', type=int, default=0)
-parser.add_argument('-g', '--gif', type=int, default=0)
-parser.add_argument('-l', '--logging', action='store_true')
+parser.add_argument('--names', nargs='*', required=True,
+                    help="A list of tests to run, separated by commas.")
+
+parser.add_argument('-s', '--start', type=int, default=0,
+                    help="The training iteration to start on (default is 0).")
+
+parser.add_argument('-e', '--end', type=int, default=0,
+                    help="The training iteration to finish on (default is the latest checkpoint).")
+
+parser.add_argument('-g', '--gif', type=int, default=0,
+                    help="Enable gifs.")
+
+parser.add_argument('-l', '--logging', action='store_true',
+                    help="Enable logs.")
 
 args = parser.parse_args()
 

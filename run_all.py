@@ -6,10 +6,17 @@ from run import run
 
 parser = argparse.ArgumentParser()
 
-parser.add_argument('--names', nargs='*', required=True)
-parser.add_argument('-e', '--end', type=int, default=50000)
-parser.add_argument('-s', '--step', type=int, default=5000)
-parser.add_argument('-g', '--gif', action='store_true')
+parser.add_argument('--names', nargs='*', required=True,
+                    help="A list of tests to run, separated by commas.")
+
+parser.add_argument('-e', '--end', type=int, default=50000,
+                    help="The training iteration to finish on (default is 50000).")
+
+parser.add_argument('-s', '--step', type=int, default=5000,
+                    help="The number of iterations per step (default is 5000).")
+
+parser.add_argument('-g', '--gif', action='store_true',
+                    help="Enable gifs.")
 
 args = parser.parse_args()
 

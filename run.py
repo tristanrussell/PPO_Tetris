@@ -347,10 +347,17 @@ def run(name, load=0, gif=False, reset=False):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
 
-    parser.add_argument('--name', required=True)
-    parser.add_argument('-l', '--load', type=int, default=0)
-    parser.add_argument('-g', '--gif', action='store_true')
-    parser.add_argument('-r', '--reset', action='store_true')
+    parser.add_argument('--name', required=True,
+                        help="The name of the test to run.")
+
+    parser.add_argument('-l', '--load', type=int, default=0,
+                        help="The checkpoint to load (default is the latest checkpoint).")
+
+    parser.add_argument('-g', '--gif', action='store_true',
+                        help="Enable gifs.")
+
+    parser.add_argument('-r', '--reset', action='store_true',
+                        help="Restart training.")
 
     args = parser.parse_args()
 
