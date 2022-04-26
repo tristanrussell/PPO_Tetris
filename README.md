@@ -4,6 +4,8 @@ An implementation of a Proximal Policy Optimisation [[1]](#references) agent
 and a Trust Region-Guided Proximal Policy Optimisation [[2]](#references) agent
 on a Tetris environment.
 
+![Reinforcement learning agent playing Tetris](.github/example_gif.gif)
+
 **Contents**
 1. [Installation](#installation)
 2. [Usage](#usage)
