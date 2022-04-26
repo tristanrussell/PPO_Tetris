@@ -9,7 +9,8 @@ on a Tetris environment.
 **Contents**
 1. [Installation](#installation)
 2. [Usage](#usage)
-3. [References](#references)
+3. [Agents and environments](#agents-and-environments)
+4. [References](#references)
 
 ## Installation
 
