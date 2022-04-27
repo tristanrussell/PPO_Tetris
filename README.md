@@ -96,8 +96,10 @@ be found at the
 
 ## References
 
-[1] [J. Schulman, F. Wolski, P. Dhariwal, A. Radford, and O. Klimov, Prox-
-imal policy optimization algorithms, 2017. arXiv: 1707.06347 [cs.LG]](https://arxiv.org/abs/1707.06347).
+[1] [J. Schulman, F. Wolski, P. Dhariwal, A. Radford, and O. Klimov, Proximal
+policy optimization algorithms, 2017. arXiv: 1707.06347
+[cs.LG]](https://arxiv.org/abs/1707.06347).
 
-[2] [Y. Wang, H. He, X. Tan, and Y. Gan, Trust region-guided proximal
-policy optimization, 2019. arXiv: 1901.10314 [cs.LG]](https://arxiv.org/abs/1901.10314).
+[2] [Y. Wang, H. He, X. Tan, and Y. Gan, Trust region-guided proximal policy
+optimization, 2019. arXiv: 1901.10314
+[cs.LG]](https://arxiv.org/abs/1901.10314).
