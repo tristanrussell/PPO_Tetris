@@ -87,12 +87,12 @@ The project provides a configuration for a single run that uses PPO. The
 configuration of the test can be found in [training/ppo](./training/ppo).
 
 The project uses
-[gym-simpletetris](https://github.com/tristanrussell/gym-simpletetris), a
-custom Tetris environment that was built entirely in Python to allow easy
+[gym-simpletetris (version 0.3.0 or 0.4.0)](https://github.com/tristanrussell/gym-simpletetris-0.4.0),
+a custom Tetris environment that was built entirely in Python to allow easy
 modification. It supports many options that can be enabled in the configuration
 file. Instructions for how to use the environment and what the options do can
 be found at the
-[project repository](https://github.com/tristanrussell/gym-simpletetris).
+[project repository](https://github.com/tristanrussell/gym-simpletetris-0.4.0).
 
 ## References
 
