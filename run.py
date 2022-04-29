@@ -126,12 +126,13 @@ def run(name, load=0, gif=False, reset=False):
             imageio.mimsave(gif_file, frames, format='gif', fps=25)
 
     def mlp(x, sizes, activation='relu', output_activation=None):
-        # Build a feedforward neural network
+        # Build a fully-connected neural network
         for size in sizes[:-1]:
             x = Dense(units=size, activation=activation)(x)
         return Dense(units=sizes[-1], activation=output_activation)(x)
 
     def build_conv(x, layers, flatten=True, activation='relu'):
+        # Build a convolutional neural network
         conv = x
 
         for layer in layers:
@@ -142,7 +143,7 @@ def run(name, load=0, gif=False, reset=False):
         else:
             return conv
 
-    # Initialize the actor and the critic as keras models
+    # Initialize the actor and the critic
     def build_net(observation_dimensions,
                   hidden_sizes,
                   conv_layers,
@@ -215,8 +216,6 @@ def run(name, load=0, gif=False, reset=False):
     else:
         wrapped_env = EnvWrapper(env)
 
-    # Initialize the environment and get the dimensionality of the
-    # observation space and the number of possible actions
     observation_dimensions = env.observation_space.shape
     num_actions = env.action_space.n
 
