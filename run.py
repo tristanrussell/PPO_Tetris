@@ -105,7 +105,7 @@ def run(name, load=0, gif=False, reset=False):
                     if done:
                         break
             gif_file = gif_path.format(epoch=epoch)
-            imageio.mimsave(gif_file, frames, format='gif', fps=25)
+            imageio.mimsave(gif_file, frames, format='gif', fps=10)
 
     def run_episodes_and_create_video_random(env, wrapped_env, num_actions, max_steps, epoch):
         if gif:
@@ -123,7 +123,7 @@ def run(name, load=0, gif=False, reset=False):
                     if done:
                         break
             gif_file = gif_path.format(epoch=epoch)
-            imageio.mimsave(gif_file, frames, format='gif', fps=25)
+            imageio.mimsave(gif_file, frames, format='gif', fps=10)
 
     def mlp(x, sizes, activation='relu', output_activation=None):
         # Build a fully-connected neural network

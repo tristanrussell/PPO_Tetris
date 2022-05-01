@@ -304,7 +304,7 @@ for name in args.names:
 
             if args.gif > 0 and i % args.gif == 0:
                 gif_file = gif_path.format(epoch=i)
-                imageio.mimsave(gif_file, frames, format='gif', fps=15)
+                imageio.mimsave(gif_file, frames, format='gif', fps=10)
 
             if enable_logging:
                 if done:
